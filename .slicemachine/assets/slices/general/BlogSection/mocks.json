@@ -1,0 +1,61 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Chest",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Eiusmod dolor voluptate sunt fugiat quis consectetur fugiat eu nulla cillum ex. Sint commodo duis eu consectetur anim anim veniam veniam velit ea excepteur cillum dolore minim. Eiusmod deserunt ut sint eu sit voluptate magna consectetur.",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "blog_section"
+  },
+  {
+    "variation": "3ColCenter",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {
+        "blogPost": {
+          "id": "mock_document_id",
+          "link_type": "Document",
+          "type": "blogPost",
+          "tags": [],
+          "lang": "en-us",
+          "slug": null,
+          "first_publication_date": "1970-01-01T00:00:01+0000",
+          "last_publication_date": "1970-01-01T01:00:00+0000"
+        }
+      }
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "However",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Do do labore Lorem Lorem deserunt occaecat ut amet veniam irure voluptate quis mollit. Fugiat ullamco reprehenderit dolor incididunt nisi consectetur aliqua eiusmod occaecat ad.",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "blog_section"
+  }
+]

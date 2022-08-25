@@ -1,0 +1,32 @@
+{
+  "slices": {
+    "HeroSlice": {}
+  },
+  "_cts": {
+    "blogRoot": {},
+    "blogPost": {},
+    "blogCategory": {},
+    "contact": {},
+    "footer": {},
+    "header": {},
+    "homepage": {},
+    "page": {},
+    "socials": {},
+    "defaultSeo": {}
+  },
+  "slices/general": {
+    "Hero": {
+      "default": {
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "AboutMe": {}
+  }
+}
