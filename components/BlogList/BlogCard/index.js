@@ -3,7 +3,7 @@ import { format } from "date-fns";
 import { RichText, Image, Link } from "../..";
 
 const BlogCard = ({ post }) => {
-  const { featuredImage, title, description, author, publishDate, category } =
+  const { featuredImage, title, description, publishDate, category } =
     post.data;
 
   return (

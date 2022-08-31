@@ -3,7 +3,6 @@ import { components } from "../../slices/blog";
 import { calculateReadTimeFromSlices } from "../../utils/calculateReadTime";
 import { BlogHero } from "./BlogHero";
 import { BlogSidebar } from "./BlogSidebar";
-import { NewsletterForm } from "..";
 
 export const BlogPage = ({
   title,

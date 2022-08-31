@@ -24,7 +24,6 @@ export const BlogHero = ({
   title,
   description,
   featuredImage,
-  author,
   category,
   readTime,
   publishDate,

@@ -6,7 +6,7 @@ import {
   getRecentPosts,
 } from "../../utils/fetchData";
 import { Layout } from "../../components";
-import { BlogPage, blogPageFetchLinks } from "../../components/BlogPage";
+import { BlogPage } from "../../components/BlogPage";
 
 const BlogPost = ({
   data,
