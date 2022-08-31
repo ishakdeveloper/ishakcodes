@@ -9,17 +9,11 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Difficulty",
+          "text": "Raise",
           "spans": []
         }
       ],
-      "description": [
-        {
-          "type": "paragraph",
-          "text": "Exercitation reprehenderit nisi eu irure consequat reprehenderit minim in anim.",
-          "spans": []
-        }
-      ]
+      "email": "curve"
     },
     "slice_type": "hero"
   }

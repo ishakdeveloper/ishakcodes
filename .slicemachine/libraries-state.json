@@ -73,6 +73,187 @@
         },
         "screenshotPaths": {}
       },
+      "about_section": {
+        "library": "slices/general",
+        "id": "about_section",
+        "name": "AboutSection",
+        "description": "AboutSection",
+        "model": {
+          "id": "about_section",
+          "type": "SharedSlice",
+          "name": "AboutSection",
+          "description": "AboutSection",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "AboutSection",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                },
+                "button": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Button",
+                    "placeholder": "",
+                    "select": null
+                  }
+                },
+                "button_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Button Text",
+                    "placeholder": ""
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Single",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Ipsum non irure amet culpa cillum dolor anim culpa.",
+                  "spans": []
+                }
+              ],
+              "button": {
+                "link_type": "Web",
+                "url": "http://twitter.com"
+              },
+              "button_text": "care",
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab"
+              }
+            },
+            "slice_type": "about_section"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "featured_blog_posts": {
+        "library": "slices/general",
+        "id": "featured_blog_posts",
+        "name": "FeaturedBlogPosts",
+        "description": "FeaturedBlogPosts",
+        "model": {
+          "id": "featured_blog_posts",
+          "type": "SharedSlice",
+          "name": "FeaturedBlogPosts",
+          "description": "FeaturedBlogPosts",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "FeaturedBlogPosts",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Theory",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Irure veniam ad do eiusmod laborum.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "featured_blog_posts"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "hero": {
         "library": "slices/general",
         "id": "hero",
@@ -94,18 +275,17 @@
                 "title": {
                   "type": "StructuredText",
                   "config": {
-                    "single": "heading1",
                     "label": "Title",
-                    "placeholder": "This is where it all begins..."
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
                   }
                 },
-                "description": {
-                  "type": "StructuredText",
+                "email": {
+                  "type": "Text",
                   "config": {
-                    "label": "Description",
-                    "placeholder": "A nice description of your feature",
-                    "allowTargetBlank": true,
-                    "single": "paragraph"
+                    "label": "email",
+                    "placeholder": ""
                   }
                 }
               },
@@ -125,17 +305,11 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Difficulty",
+                  "text": "Raise",
                   "spans": []
                 }
               ],
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Exercitation reprehenderit nisi eu irure consequat reprehenderit minim in anim.",
-                  "spans": []
-                }
-              ]
+              "email": "curve"
             },
             "slice_type": "hero"
           }
@@ -151,6 +325,223 @@
             "height": 48
           }
         }
+      },
+      "skills_section": {
+        "library": "slices/general",
+        "id": "skills_section",
+        "name": "SkillsSection",
+        "description": "SkillsSection",
+        "model": {
+          "id": "skills_section",
+          "type": "SharedSlice",
+          "name": "SkillsSection",
+          "description": "SkillsSection",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SkillsSection",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                },
+                "button": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Button",
+                    "placeholder": "",
+                    "select": null
+                  }
+                },
+                "buttonText": {
+                  "type": "Text",
+                  "config": {
+                    "label": "ButtonText",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Ut enim exercitation ea anim eiusmod veniam eu voluptate deserunt ut anim ullamco. Mollit dolore incididunt quis qui laborum laboris laborum velit sit laborum proident. Dolore nisi voluptate commodo tempor Lorem aute duis tempor.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Enim laborum aute cupidatat amet in. Aute magna reprehenderit ex laborum cillum.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Number",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Cupidatat aute reprehenderit pariatur culpa duis ad esse ea dolor aliqua. Lorem culpa pariatur sint cupidatat. Aliqua proident amet exercitation ea.",
+                  "spans": []
+                }
+              ],
+              "button": {
+                "link_type": "Web",
+                "url": "http://twitter.com"
+              },
+              "buttonText": "substance"
+            },
+            "slice_type": "skills_section"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "tools": {
+        "library": "slices/general",
+        "id": "tools",
+        "name": "Tools",
+        "description": "Tools",
+        "model": {
+          "id": "tools",
+          "type": "SharedSlice",
+          "name": "Tools",
+          "description": "Tools",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Tools",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                }
+              },
+              "items": {
+                "toolLogo": {
+                  "type": "Image",
+                  "config": {
+                    "label": "ToolLogo",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "toolLogo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8"
+                }
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Shelf",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Irure ad ea laborum incididunt ullamco incididunt laboris sit est culpa reprehenderit voluptate nisi elit esse. Laborum labore proident ea sint magna incididunt ullamco nisi.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "tools"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
       }
     }
   },

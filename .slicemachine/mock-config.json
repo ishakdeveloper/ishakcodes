@@ -18,15 +18,23 @@
     "Hero": {
       "default": {
         "primary": {
-          "description": {
+          "title": {
             "config": {
-              "patternType": "PARAGRAPH",
+              "patternType": "HEADING",
               "blocks": 1
             }
           }
         }
       }
     },
-    "AboutMe": {}
+    "AboutMe": {},
+    "AboutSection": {},
+    "SkillsSection": {},
+    "FeaturedBlogPosts": {
+      "default": {
+        "items": {}
+      }
+    },
+    "Tools": {}
   }
 }

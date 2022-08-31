@@ -1,0 +1,9 @@
+import MyComponent from '../../../../../slices/general/Tools';
+
+export default {
+  title: 'slices/general/Tools'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{"toolLogo":{"dimensions":{"width":900,"height":500},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1576662712957-9c79ae1280f8"}}],"primary":{"title":[{"type":"heading1","text":"Shelf","spans":[]}],"description":[{"type":"paragraph","text":"Irure ad ea laborum incididunt ullamco incididunt laboris sit est culpa reprehenderit voluptate nisi elit esse. Laborum labore proident ea sint magna incididunt ullamco nisi.","spans":[]}]},"slice_type":"tools","id":"_Default"}} />
+_Default.storyName = ''

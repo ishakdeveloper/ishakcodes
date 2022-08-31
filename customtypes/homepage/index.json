@@ -12,6 +12,15 @@
           "choices": {
             "hero": {
               "type": "SharedSlice"
+            },
+            "about_section": {
+              "type": "SharedSlice"
+            },
+            "skills_section": {
+              "type": "SharedSlice"
+            },
+            "featured_blog_posts": {
+              "type": "SharedSlice"
             }
           }
         }
