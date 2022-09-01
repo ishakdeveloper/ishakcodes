@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: "https://skyward.digital", //Replace with your production website url
+  siteUrl: "https://ishak.codes", //Replace with your production website url
   generateRobotsTxt: true,
 };

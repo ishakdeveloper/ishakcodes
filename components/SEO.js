@@ -9,7 +9,7 @@ export const Seo = ({
   author,
   lang,
 }) => {
-  const absoluteUrl = `https://skyward.digital/${url ? url : ""}`;
+  const absoluteUrl = `https://ishak.codes/${url ? url : ""}`;
 
   return (
     <Head>
