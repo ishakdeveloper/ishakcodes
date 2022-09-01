@@ -1,31 +1,23 @@
-import React from 'react'
-import { PrismicRichText } from '@prismicio/react'
+import React from "react";
+import { RichText } from "../../../components";
 
 const Tools = ({ slice }) => (
-  <section>
-    <span className="title">
-      {
-        slice.primary.title ?
-        <PrismicRichText field={slice.primary.title}/>
-        : <h2>Template slice, update me!</h2>
-      }
-    </span>
-    {
-      slice.primary.description ?
-      <PrismicRichText field={slice.primary.description}/>
-      : <p>start by editing this slice from inside Slice Machine!</p>
-    }
-    <style jsx>{`
-        section {
-          max-width: 600px;
-          margin: 4em auto;
-          text-align: center;
-        }
-        .title {
-          color: #8592e0;
-        }
-    `}</style>
-  </section>
-)
+  <section className="my-16">
+    <div className="mb-6">
+      <span className="title">
+        <RichText field={slice.primary.title} />
+      </span>
+      <RichText field={slice.primary.description} />
+    </div>
 
-export default Tools
+    <div>
+      {slice?.items?.map((item, i) => (
+        <div key={i} className="flex w-32">
+          <img src={item.toolLogo.url} alt={item.toolLogo.alt} />
+        </div>
+      ))}
+    </div>
+  </section>
+);
+
+export default Tools;
