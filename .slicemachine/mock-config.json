@@ -12,7 +12,15 @@
     "homepage": {},
     "page": {},
     "socials": {},
-    "defaultSeo": {}
+    "defaultSeo": {},
+    "projects_page": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    }
   },
   "slices/general": {
     "Hero": {

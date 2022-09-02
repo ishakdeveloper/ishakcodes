@@ -1,9 +1,13 @@
 import { PrismicRichText } from "@prismicio/react";
 import { Socials } from "../Socials";
 import { Link } from "../Link";
+import { RichText } from "../RichText";
 
 export const Footer = ({
-  logo,
+  button,
+  button_label,
+  email,
+  copyright_text,
   text,
   links,
   ctaTitle,
@@ -54,18 +58,23 @@ export const Footer = ({
 
           <div>
             <div className="flex flex-wrap items-center mb-8 md:flex-nowrap">
-              {logo?.url && (
-                <img
-                  className="h-16 mb-8 mr-12"
-                  src={logo.url}
-                  alt={logo.alt}
-                />
-              )}
-              {text && (
+              <div>
                 <div className="w-80">
-                  <PrismicRichText field={text} />
+                  <RichText field={text} />
                 </div>
-              )}
+
+                <div>
+                  <div>
+                    <Link href={button}>{button_label}</Link>
+                  </div>
+                  <div>
+                    <RichText field={email} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-80">
+              <span>{copyright_text}</span>
             </div>
             <Socials className="flex md:justify-center xl:justify-start " />
           </div>

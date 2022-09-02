@@ -1,11 +1,12 @@
 import { useRouter } from "next/router";
 import { Disclosure } from "@headlessui/react";
 import { linkResolver } from "../../prismic";
-import { Link, Image } from "..";
+import { Link } from "..";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
+import { RichText } from "../RichText";
 
-export const Header = ({ logo, navigation }) => {
+export const Header = ({ logo_text, navigation }) => {
   return (
     <header>
       <Disclosure as="nav">
@@ -13,9 +14,9 @@ export const Header = ({ logo, navigation }) => {
           <div className="container">
             <div className="relative flex items-center justify-between h-16">
               <div className="flex items-center justify-center md:flex-1 sm:items-stretch sm:justify-between">
-                {/* Main Logo */}
+                {/* Main logo_text */}
                 <Link href="/" className="flex items-center flex-shrink-0">
-                  <Image {...logo} loading="eager" className="w-auto h-10" />
+                  <RichText field={logo_text} />
                   <span className="sr-only">Home</span>
                 </Link>
 
