@@ -4,7 +4,7 @@
     "node": true
   },
   "parser": "babel-eslint",
-  "extends": ["eslint:recommended", "plugin:tailwind/recommended"],
+  "extends": ["eslint:recommended"],
   "plugins": ["react"],
   "parserOptions": {
     "ecmaVersion": 2020,

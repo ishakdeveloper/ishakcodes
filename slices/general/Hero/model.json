@@ -26,6 +26,14 @@
             "label": "email",
             "placeholder": ""
           }
+        },
+        "github_link": {
+          "type": "Link",
+          "config": {
+            "label": "Github Link",
+            "placeholder": "",
+            "select": null
+          }
         }
       },
       "items": {},

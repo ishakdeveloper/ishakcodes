@@ -12,7 +12,6 @@
 }
 
 body {
-  @apply text-gray-800 bg-gray-100 bg-opacity-60;
 }
 
 /* .prose h1 {

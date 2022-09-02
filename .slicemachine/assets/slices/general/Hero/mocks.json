@@ -9,11 +9,15 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Whenever",
+          "text": "Necessary",
           "spans": []
         }
       ],
-      "email": "courage"
+      "email": "rear",
+      "github_link": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      }
     },
     "slice_type": "hero"
   },
@@ -27,25 +31,25 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Addition",
+          "text": "Toward",
           "spans": []
         }
       ],
       "titleInfo": [
         {
           "type": "paragraph",
-          "text": "Aute adipisicing consequat quis sit aliqua. Consequat mollit Lorem est.",
+          "text": "Sint ea enim in sint est qui reprehenderit cupidatat tempor dolore amet ut ad dolore magna. Laborum est nisi fugiat do quis consequat.",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Irure id exercitation Lorem laboris officia cupidatat mollit sit occaecat in quis magna. Aute cupidatat cupidatat tempor sit occaecat aute est cupidatat velit magna officia aliqua do qui minim. Ullamco pariatur velit minim.",
+          "text": "Reprehenderit officia Lorem incididunt duis non veniam commodo enim tempor culpa consequat laborum. Mollit sunt labore cupidatat nostrud pariatur occaecat tempor cillum cupidatat ad officia officia.",
           "spans": []
         }
       ],
-      "email": "whom"
+      "email": "interest"
     },
     "slice_type": "hero"
   }

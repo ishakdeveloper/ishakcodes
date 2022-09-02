@@ -20,6 +20,10 @@ export const linkResolver = (doc) => {
   if (doc.type === "blogPost") return `/blog/${doc.uid}`;
   // if (doc.type === "blogCategory") return `/blog/category/${doc.uid}`;
 
+  // Projects
+  if (doc.type === "projects_page") return `/projects`;
+  // if (doc.type === "blogPost") return `/blog/${doc.uid}`;
+
   // Fallback
   return "/";
 };
