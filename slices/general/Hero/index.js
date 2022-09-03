@@ -9,11 +9,11 @@ const Hero = ({ slice }) => {
   return (
     <section id={slice.primary.id} className="pt-24">
       <Container>
-        <div className="space-y-[23rem]">
+        <div className="space-y-[26rem]">
           <div className="max-w-7xl mx-auto text-center">
             <RichText
               field={slice.primary.title}
-              className="mb-8 font-bold leading-[1.15] text-primary-black text-6xl dark:text-gray-50"
+              className="mb-8 typography-heading-1"
             />
 
             <RichText

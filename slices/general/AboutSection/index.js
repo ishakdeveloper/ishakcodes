@@ -1,24 +1,24 @@
 import React from "react";
-import { RichText, Link, Image } from "../../../components";
+import { RichText, Link } from "../../../components";
 import { Container } from "../../../components/Container";
 
 const AboutSection = ({ slice }) => (
-  <section className="my-16 bg-light-blue-1 ">
+  <section className="mt-32 bg-light-blue-1 relative">
     <Container>
-      <div className="relative ">
-        <div className="relative flex justify-end py-32">
-          <div className="rounded-3xl z-10">
+      <div>
+        <div className="flex py-16">
+          <div className="absolute rounded-3xl z-10 shadow-main -top-8">
             <img
               src={slice.primary.image.url}
               alt={slice.primary.image.alt}
-              className="object-cover rounded-3xl w-[490px] h-[512px]"
+              className="object-cover rounded-3xl w-[400px] h-[500px]"
             />
           </div>
-          <div className="relative bg-white rounded-3xl shadow-md my-16 z-0 w-10/12 flex items-center">
+          <div className="ml-auto py-12 px-16 bg-white rounded-3xl shadow-main z-0 w-2/3 flex items-center">
             <div>
               <RichText
                 field={slice.primary.title}
-                className="text-4xl text-primary-black font-bold"
+                className="typography-heading-2"
               />
               <RichText
                 field={slice.primary.description}

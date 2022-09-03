@@ -1,22 +1,32 @@
 import React from "react";
-import { RichText } from "../../../components";
+import { RichText, Image } from "../../../components";
+import { Container } from "../../../components/Container";
 
 const Tools = ({ slice }) => (
-  <section className="my-16">
-    <div className="mb-6">
-      <span className="title">
-        <RichText field={slice.primary.title} />
-      </span>
-      <RichText field={slice.primary.description} />
-    </div>
+  <section id={slice.primary.id} className="py-12 md:py-44">
+    <Container>
+      <div className="container">
+        <div className="max-w-5xl mx-auto text-center">
+          <RichText
+            field={slice.primary.title}
+            className="typography-heading-1"
+          />
 
-    <div>
-      {slice?.items?.map((item, i) => (
-        <div key={i} className="flex w-32">
-          <img src={item.toolLogo.url} alt={item.toolLogo.alt} />
+          <RichText
+            field={slice.primary.description}
+            className="typography-text-1 mt-3"
+          />
         </div>
-      ))}
-    </div>
+
+        <div className="flex flex-wrap items-center justify-center max-w-5xl mx-auto gap-x-20 gap-y-4 mt-12">
+          {slice?.items?.map((item, index) => {
+            return (
+              <Image key={index} {...item.toolLogo} className="w-auto py-6" />
+            );
+          })}
+        </div>
+      </div>
+    </Container>
   </section>
 );
 
