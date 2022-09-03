@@ -19,6 +19,12 @@
           "choices": {
             "hero": {
               "type": "SharedSlice"
+            },
+            "skills_section": {
+              "type": "SharedSlice"
+            },
+            "tools": {
+              "type": "SharedSlice"
             }
           }
         }

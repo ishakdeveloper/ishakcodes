@@ -1,8 +1,8 @@
 {
-  "name": "skyward-starter-next-prismic",
+  "name": "ishakcodes",
   "version": "0.1",
-  "description": "An awesome website made with Prismic (slicemachines), NextJS and Tailwind",
-  "author": "<skyward-digital>",
+  "description": "Ishak Kahrimanovic Portfolio",
+  "author": "Ishak Kahrimanovic",
   "license": "MIT",
   "main": "slices/index.js",
   "scripts": {

@@ -1,28 +1,57 @@
 {
-  "id": "6415eabe-e2dd-4cb8-8c84-35e6c15db0a6",
-  "uid": "id-corrupti-nihil",
+  "id": "mock-doc-id",
+  "url": null,
   "type": "footer",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
   "data": {
-    "footer_title": [
+    "text": [
+      {
+        "type": "paragraph",
+        "text": "Occaecat aliqua laboris veniam. Nisi excepteur officia cupidatat in irure et cupidatat. Quis dolor pariatur est ad non deserunt et est esse nulla do.",
+        "spans": []
+      }
+    ],
+    "button": {
+      "link_type": "Web",
+      "url": "https://prismic.io"
+    },
+    "button_label": "trade",
+    "email": "per",
+    "links": [
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        },
+        "linkLabel": "deeply"
+      }
+    ],
+    "copyright_text": "height",
+    "ctaTitle": [
       {
         "type": "heading2",
-        "text": "Drive synergistic networks",
+        "text": "Slave",
         "spans": []
       }
     ],
-    "footer_text": [
+    "ctaDescription": [
       {
         "type": "paragraph",
-        "text": "Ipsum deserunt fugiat laboris ullamco culpa culpa reprehenderit. Est proident laborum anim qui fugiat consectetur consectetur eiusmod cupidatat. Est mollit incididunt ut deserunt do sunt ut veniam aliqua.",
+        "text": "Sit nostrud exercitation enim cillum do culpa dolor aliquip ipsum labore incididunt.",
         "spans": []
       }
     ],
-    "footer_newsletter": [
-      {
-        "type": "paragraph",
-        "text": "Enim est occaecat magna ullamco reprehenderit in ea esse esse ex exercitation.",
-        "spans": []
-      }
-    ]
+    "ctaLink": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "ctaLinkLabel": "vast"
   }
 }

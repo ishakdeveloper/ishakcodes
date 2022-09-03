@@ -5,14 +5,6 @@
   "status": true,
   "json": {
     "Main": {
-      "logo": {
-        "config": {
-          "label": "Logo",
-          "constraint": {},
-          "thumbnails": []
-        },
-        "type": "Image"
-      },
       "text": {
         "type": "StructuredText",
         "config": {
@@ -22,10 +14,31 @@
           "multi": "paragraph,strong,em,hyperlink"
         }
       },
+      "button": {
+        "type": "Link",
+        "config": {
+          "label": "Button",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "button_label": {
+        "type": "Text",
+        "config": {
+          "label": "Button Label",
+          "placeholder": ""
+        }
+      },
+      "email": {
+        "type": "Text",
+        "config": {
+          "label": "email",
+          "placeholder": ""
+        }
+      },
       "links": {
         "config": {
           "label": "Links",
-          "placeholder": "",
           "fields": {
             "link": {
               "config": {
@@ -46,6 +59,13 @@
           }
         },
         "type": "Group"
+      },
+      "copyright_text": {
+        "type": "Text",
+        "config": {
+          "label": "Copyright Text",
+          "placeholder": ""
+        }
       }
     },
     "CTA": {

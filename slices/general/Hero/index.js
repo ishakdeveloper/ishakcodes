@@ -1,15 +1,14 @@
-import React from "react";
-import { RichText } from "../../../components";
+import dynamic from "next/dynamic";
 
-const Hero = ({ slice }) => {
-  return (
-    <section>
-      <span className="title">
-        <RichText field={slice.primary.title} />
-      </span>
-      <RichText field={slice.primary.email} />
-    </section>
-  );
+const componentMap = {
+  default: dynamic(() => import("./Default")),
+  aboutHero: dynamic(() => import("./AboutHero")),
+};
+
+const Hero = ({ slice, index }) => {
+  const VariableComponent = componentMap[slice.variation];
+
+  return <VariableComponent id={`${index}-Hero`} slice={slice} />;
 };
 
 export default Hero;

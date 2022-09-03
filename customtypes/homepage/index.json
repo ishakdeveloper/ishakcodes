@@ -21,6 +21,9 @@
             },
             "featured_blog_posts": {
               "type": "SharedSlice"
+            },
+            "tools": {
+              "type": "SharedSlice"
             }
           }
         }

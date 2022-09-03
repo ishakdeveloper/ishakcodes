@@ -12,7 +12,6 @@
 }
 
 body {
-  @apply text-gray-800 bg-gray-100 bg-opacity-60;
 }
 
 /* .prose h1 {
@@ -42,3 +41,17 @@ a:not(.btn):not([class*="hover"]) {
 a:not(.btn):not([class*="focus"]) {
   @apply focus:text-tertiary-accent;
 } */
+
+@layer components {
+  .typography-heading-1 {
+    @apply font-bold leading-[1.15] text-primary-black text-6xl;
+  }
+
+  .typography-heading-2 {
+    @apply text-4xl text-primary-black font-bold;
+  }
+
+  .typography-text-1 {
+    @apply font-normal text-xl leading-[1.7] text-primary-gray-1;
+  }
+}

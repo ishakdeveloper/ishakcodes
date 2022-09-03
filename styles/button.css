@@ -1,13 +1,13 @@
 .btn {
-  @apply inline-flex items-center text-gray-500 justify-center gap-2 px-8 py-3 font-semibold antialiased transition duration-200 ease-in-out no-underline outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600;
+  @apply inline-flex hover:-translate-y-1 items-center justify-center gap-2 px-8 py-3 font-semibold antialiased transition duration-200 ease-in-out no-underline outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600;
 }
 
 .btn-primary {
-  @apply rounded-xl bg-rose-400 hover:bg-cyan-900 text-white;
+  @apply rounded-lg bg-primary-black  text-white;
 }
 
 .btn-secondary {
-  @apply rounded-xl bg-white hover:bg-rose-800 text-gray-800 hover:text-white;
+  @apply rounded-xl bg-white  text-primary-black;
 }
 
 .btn-dark {

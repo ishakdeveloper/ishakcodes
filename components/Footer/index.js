@@ -1,76 +1,64 @@
-import { PrismicRichText } from "@prismicio/react";
-import { Socials } from "../Socials";
 import { Link } from "../Link";
+import { RichText } from "../RichText";
+import { Container } from "../Container";
 
 export const Footer = ({
-  logo,
+  button,
+  button_label,
+  email,
+  copyright_text,
   text,
   links,
-  ctaTitle,
-  ctaDescription,
-  ctaLink,
-  ctaLinkLabel,
 }) => {
   return (
-    <footer className="py-8 text-white bg-black">
-      <div className="container">
-        {/* Footer CTA */}
-        {ctaTitle && ctaDescription && (
-          <div className="max-w-3xl mx-auto mt-16 mb-32 text-center">
-            {ctaTitle && (
-              <div className="mb-6 text-4xl font-extrabold leading-none tracking-tight md:text-5xl">
-                <PrismicRichText field={ctaTitle} />
-              </div>
-            )}
-
-            {ctaDescription && (
-              <div className="mb-6 text-lg">
-                <PrismicRichText field={ctaDescription} />
-              </div>
-            )}
-
-            {ctaLink && ctaLinkLabel && (
-              <div className="flex flex-wrap justify-center gap-4">
-                <Link href={ctaLink} className="btn btn-secondary btn-xl">
-                  {ctaLinkLabel}
+    <footer className="py-16 text-white bg-primary-black">
+      <Container>
+        <div className="max-w-6xl">
+          <div>
+            <RichText field={text} className="text-[2.875rem] font-bold" />
+            <div className="flex items-center space-x-4 mb-24 mt-4">
+              <div>
+                <Link href={button} className="btn btn-secondary">
+                  {button_label}
                 </Link>
               </div>
-            )}
+              <a href={`mailto:${email}`}>
+                <RichText
+                  field={email}
+                  className="text-base font-semibold text-white"
+                />
+              </a>
+            </div>
           </div>
-        )}
+        </div>
+
+        <div className="my-6 h-[2px] w-full bg-white"></div>
 
         {/* Footer main */}
-        <div className="flex flex-wrap justify-between my-8 overflow-hidden lg:flex-row lg:flex-nowrap">
+        <div className="flex flex-wrap justify-between overflow-hidden lg:flex-row lg:flex-nowrap">
+          <div className="flex items-center">
+            <span className="font-semibold text-xl mr-2">&copy;</span>
+            <span className="font-semibold text-base text-white">
+              {copyright_text}
+            </span>
+          </div>
           {/* Footer links */}
           {links && (
-            <ul className="mb-12 grid grid-cols-2 gap-x-12 md:order-last md:mb-0">
+            <ul className="flex space-x-8">
               {links.map(({ link, linkLabel }, index) => (
                 <li key={index} className="my-2">
-                  <Link href={link}>{linkLabel}</Link>
+                  <Link
+                    href={link}
+                    className="font-medium text-base text-white hover:text-primary-blue ease-in-out transition-colors"
+                  >
+                    {linkLabel}
+                  </Link>
                 </li>
               ))}
             </ul>
           )}
-
-          <div>
-            <div className="flex flex-wrap items-center mb-8 md:flex-nowrap">
-              {logo?.url && (
-                <img
-                  className="h-16 mb-8 mr-12"
-                  src={logo.url}
-                  alt={logo.alt}
-                />
-              )}
-              {text && (
-                <div className="w-80">
-                  <PrismicRichText field={text} />
-                </div>
-              )}
-            </div>
-            <Socials className="flex md:justify-center xl:justify-start " />
-          </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 };
