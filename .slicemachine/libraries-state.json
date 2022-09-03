@@ -486,6 +486,67 @@
                 }
               },
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "skillsBlue",
+              "name": "SkillsBlue",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SkillsSection",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                },
+                "button": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Button",
+                    "placeholder": "",
+                    "select": null
+                  }
+                },
+                "buttonText": {
+                  "type": "Text",
+                  "config": {
+                    "label": "ButtonText",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
         },
@@ -498,14 +559,14 @@
                 "title": [
                   {
                     "type": "paragraph",
-                    "text": "Ut enim exercitation ea anim eiusmod veniam eu voluptate deserunt ut anim ullamco. Mollit dolore incididunt quis qui laborum laboris laborum velit sit laborum proident. Dolore nisi voluptate commodo tempor Lorem aute duis tempor.",
+                    "text": "Id eiusmod veniam eiusmod labore elit cupidatat eiusmod enim commodo qui commodo qui pariatur proident elit.",
                     "spans": []
                   }
                 ],
                 "description": [
                   {
                     "type": "paragraph",
-                    "text": "Enim laborum aute cupidatat amet in. Aute magna reprehenderit ex laborum cillum.",
+                    "text": "Velit enim anim ullamco commodo. Ipsum qui ullamco deserunt occaecat culpa excepteur in pariatur mollit fugiat amet aliquip. In fugiat elit magna nostrud labore officia laboris reprehenderit nostrud sit veniam non elit laboris.",
                     "spans": []
                   }
                 ]
@@ -515,22 +576,66 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Number",
+                  "text": "Production",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Cupidatat aute reprehenderit pariatur culpa duis ad esse ea dolor aliqua. Lorem culpa pariatur sint cupidatat. Aliqua proident amet exercitation ea.",
+                  "text": "Quis reprehenderit cillum fugiat est id consequat cupidatat sint.",
                   "spans": []
                 }
               ],
               "button": {
                 "link_type": "Web",
-                "url": "http://twitter.com"
+                "url": "https://slicemachine.dev"
               },
-              "buttonText": "substance"
+              "buttonText": "discussion"
+            },
+            "slice_type": "skills_section"
+          },
+          "skillsBlue": {
+            "variation": "skillsBlue",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Ipsum culpa magna dolor consectetur deserunt non minim et ad irure ullamco sunt.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Ad magna duis aliqua eiusmod do ullamco sunt reprehenderit magna voluptate veniam ipsum veniam ipsum esse.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Method",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Aliqua voluptate in sunt pariatur.",
+                  "spans": []
+                }
+              ],
+              "button": {
+                "link_type": "Web",
+                "url": "https://prismic.io"
+              },
+              "buttonText": "thumb"
             },
             "slice_type": "skills_section"
           }

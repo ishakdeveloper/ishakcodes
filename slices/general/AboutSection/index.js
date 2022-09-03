@@ -7,7 +7,7 @@ const AboutSection = ({ slice }) => (
     <Container>
       <div>
         <div className="flex py-16">
-          <div className="absolute rounded-3xl z-10 shadow-main -top-8">
+          <div className="absolute rounded-3xl z-10 shadow-main -top-6">
             <img
               src={slice.primary.image.url}
               alt={slice.primary.image.alt}
@@ -22,13 +22,10 @@ const AboutSection = ({ slice }) => (
               />
               <RichText
                 field={slice.primary.description}
-                className="font-normal text-xl leading-[1.9]"
+                className="typography-text-1 mt-2"
               />
-              <div>
-                <Link
-                  href={slice.primary.button}
-                  className="btn btn-secondary btn-xl"
-                >
+              <div className="mt-6">
+                <Link href={slice.primary.button} className="btn btn-primary">
                   {slice.primary.button_text}
                 </Link>
               </div>

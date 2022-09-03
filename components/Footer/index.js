@@ -18,7 +18,7 @@ export const Footer = ({
             <RichText field={text} className="text-[2.875rem] font-bold" />
             <div className="flex items-center space-x-4 mb-24 mt-4">
               <div>
-                <Link href={button} className="btn btn-primary">
+                <Link href={button} className="btn btn-secondary">
                   {button_label}
                 </Link>
               </div>
