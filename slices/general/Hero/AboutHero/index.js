@@ -4,7 +4,7 @@ import { Container } from "../../../../components/Container";
 
 const AboutHero = ({ slice }) => {
   return (
-    <section className="pt-14 pb-14">
+    <section className="pb-24 pt-10">
       <Container>
         <div className="max-w-7xl">
           <RichText
@@ -19,13 +19,6 @@ const AboutHero = ({ slice }) => {
             field={slice.primary.description}
             className="typography-text-1 max-w-5xl"
           />
-        </div>
-
-        <div className="mt-24">
-          <div className="w-1 h-28 bg-primary-black mb-6"></div>
-          <span className="uppercase text-base font-medium text-primary-black tracking-[10px]">
-            Read more
-          </span>
         </div>
       </Container>
     </section>
