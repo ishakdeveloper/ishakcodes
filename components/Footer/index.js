@@ -19,8 +19,8 @@ export const Footer = ({
               field={text}
               className="text-2xl lg:text-[2.875rem] font-bold leading-[1.3]"
             />
-            <div className="flex items-center space-x-4 mb-12 lg:mb-24 mt-4">
-              <div>
+            <div className="flex flex-col md:flex-row items-start md:items-center space-x-4 mb-12 lg:mb-24 mt-4">
+              <div className="mb-4 md:mb-0">
                 <Link href={button} className="btn btn-secondary">
                   {button_label}
                 </Link>
