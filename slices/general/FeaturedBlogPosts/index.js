@@ -9,7 +9,7 @@ const FeaturedBlogPosts = ({ slice }) => {
   const { recentPosts } = useContext(GlobalContext);
 
   return (
-    <section id={slice.primary.id} className="bg-light-blue-1 py-28">
+    <section id={slice.primary.id} className="bg-light-blue-1 py-12 lg:py-28">
       <Container>
         <div className="container">
           <div className="max-w-4xl">

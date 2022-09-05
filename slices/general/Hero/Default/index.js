@@ -4,7 +4,7 @@ import { Container } from "../../../../components/Container";
 
 const HeroDefault = ({ slice }) => {
   return (
-    <section id={slice.primary.id} className="pt-20">
+    <section id={slice.primary.id} className="pt-10 lg:pt-20">
       <Container>
         <div>
           <div className="max-w-7xl mx-auto text-center">
