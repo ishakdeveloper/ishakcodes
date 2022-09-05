@@ -44,7 +44,7 @@ a:not(.btn):not([class*="focus"]) {
 
 @layer components {
   .typography-heading-1 {
-    @apply font-bold leading-[1.15] text-primary-black text-6xl;
+    @apply font-bold leading-[1.15] text-primary-black text-4xl lg:text-6xl;
   }
 
   .typography-heading-2 {

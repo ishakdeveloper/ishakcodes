@@ -11,12 +11,15 @@ export const Footer = ({
   links,
 }) => {
   return (
-    <footer className="py-16 text-white bg-primary-black">
+    <footer className="py-8 lg:py-16 text-white bg-primary-black">
       <Container>
         <div className="max-w-6xl">
           <div>
-            <RichText field={text} className="text-[2.875rem] font-bold" />
-            <div className="flex items-center space-x-4 mb-24 mt-4">
+            <RichText
+              field={text}
+              className="text-2xl lg:text-[2.875rem] font-bold leading-[1.3]"
+            />
+            <div className="flex items-center space-x-4 mb-12 lg:mb-24 mt-4">
               <div>
                 <Link href={button} className="btn btn-secondary">
                   {button_label}
